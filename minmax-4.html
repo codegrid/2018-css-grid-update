@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>demo</title>
+<style>
+/* 必要な指定 */
+.List {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+}
+/* 装飾 */
+.List {
+  gap: 10px;
+}
+.List_Item {
+  padding: 10px;
+  min-height: 50px;
+  background-color: #ccc;
+}
+.List_Item:nth-child(3n+1) {
+  background-color: tomato;
+}
+</style>
+</head>
+<body>
+
+<div class="List">
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+  <div class="List_Item"></div>
+</div>
+
+</body>
+</html>
