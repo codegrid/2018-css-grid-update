@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>demo</title>
+<style>
+/* 必要な指定 */
+form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: fit-content(40%) minmax(5em, 1fr);
+}
+/* 装飾 */
+form {
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+label {
+  padding: 5px;
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>短いラベル名</h2>
+<form>
+  <label for="f0-name">名前</label>
+  <input id="f0-name" type="text">
+</form>
+
+<h2>少し長いラベル名</h2>
+<form>
+  <label for="f1-name">名前</label>
+  <input id="f1-name" type="text">
+  <label for="f1-mail">メールアドレス</label>
+  <input id="f1-mail" type="mail">
+  <label for="f1-mail">住所</label>
+  <input id="f1-mail" type="text">
+</form>
+
+<h2>長いラベル名</h2>
+<form>
+  <label for="f2-name">名前</label>
+  <input id="f2-name" type="text">
+  <label for="f2-mail">すごくなが〜〜〜〜いラベルすごくなが〜〜〜〜いラベルすごくなが〜〜〜〜いラベルすごくなが〜〜〜〜いラベルすごくなが〜〜〜〜いラベルすごくなが〜〜〜〜いラベルすごくなが〜〜〜〜いラベルすごくなが〜〜〜〜いラベルすごくなが〜〜〜〜いラベル</label>
+  <input id="f2-mail" type="mail">
+  <label for="f2-mail">住所</label>
+  <input id="f2-mail" type="text">
+</form>
+
+</body>
+</html>

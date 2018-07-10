@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>demo</title>
+<style>
+/* 必要な指定 */
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+/* 装飾 */
+.Grid {
+  grid-gap: 10px;
+}
+.Grid_Item {
+  padding: 10px;
+}
+.Grid_Item {
+  background-color: gold;
+  min-height: 100px;
+}
+.Grid_Item:nth-child(even) {
+  background-color: limegreen;
+}
+</style>
+</head>
+<body>
+
+
+<div class="Grid">
+  <div class="Grid_Item">1</div>
+  <div class="Grid_Item">2</div>
+  <div class="Grid_Item">3</div>
+  <div class="Grid_Item">4</div>
+  <div class="Grid_Item">5</div>
+  <div class="Grid_Item">6</div>
+  <div class="Grid_Item">7</div>
+</div>
+
+
+</body>
+</html>

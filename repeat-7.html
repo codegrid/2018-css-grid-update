@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>demo</title>
+<style>
+/* 必要な指定 */
+.List {
+  display: grid;
+  grid-gap: 30px 20px;
+  gap: 30px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  padding: 10px;
+}
+.List_Item {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+.List_Image {
+  margin-bottom: 10px;
+}
+.List_ImageEl {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+}
+.List_Title {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #222;
+}
+.List_Text {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #4e4e4e;
+}
+.List_Price {
+  text-align: right;
+  font-size: 14px;
+}
+
+select {
+  height: 30px;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+
+<select>
+  <option value="grid-template-columns: repeat(auto-fit, minmax(200px, auto));">repeat(auto-fit, minmax(200px, auto))</option>
+  <option value="grid-template-columns: repeat(auto-fill, minmax(200px, auto));">repeat(auto-fill, minmax(200px, auto))</option>
+</select>
+
+
+<hr>
+
+
+<div class="List">
+  <div class="List_Item">
+    <div class="List_Image"><img class="List_ImageEl" src="https://placeimg.com/640/480/arch" alt=""></div>
+    <div class="List_Title">Title</div>
+    <div class="List_Text">The quick brown fox jumps over the lazy dog. </div>
+    <div class="List_Price">3,000円</div>
+  </div>
+  <div class="List_Item">
+    <div class="List_Image"><img class="List_ImageEl" src="https://placeimg.com/640/480/nature" alt=""></div>
+    <div class="List_Title">Title</div>
+    <div class="List_Text">The quick brown fox jumps over the lazy dog. </div>
+    <div class="List_Price">3,000円</div>
+  </div>
+  <div class="List_Item">
+    <div class="List_Image"><img class="List_ImageEl" src="https://placeimg.com/640/480/animals" alt=""></div>
+    <div class="List_Title">Title</div>
+    <div class="List_Text">The quick brown fox jumps over the lazy dog. </div>
+    <div class="List_Price">3,000円</div>
+  </div>
+  <div class="List_Item">
+    <div class="List_Image"><img class="List_ImageEl" src="https://placeimg.com/640/480/tech" alt=""></div>
+    <div class="List_Title">Title</div>
+    <div class="List_Text">The quick brown fox jumps over the lazy dog. </div>
+    <div class="List_Price">3,000円</div>
+  </div>
+  <div class="List_Item">
+    <div class="List_Image"><img class="List_ImageEl" src="https://placeimg.com/640/480/people" alt=""></div>
+    <div class="List_Title">Title</div>
+    <div class="List_Text">The quick brown fox jumps over the lazy dog. </div>
+    <div class="List_Price">3,000円</div>
+  </div>
+  <div class="List_Item">
+    <div class="List_Image"><img class="List_ImageEl" src="https://placeimg.com/640/480/any" alt=""></div>
+    <div class="List_Title">Title</div>
+    <div class="List_Text">The quick brown fox jumps over the lazy dog. </div>
+    <div class="List_Price">3,000円</div>
+  </div>
+</div>
+
+
+<script>
+const list = document.querySelector('.List')
+const select = document.querySelector('select')
+
+select.addEventListener('change', function(e){
+  list.style.cssText = e.target.value
+}, false)
+</script>
+
+</body>
+</html>
